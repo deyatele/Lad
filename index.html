@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Задания Lad</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Задачи для Frontend-стажировки в Lad</h1>
+    </div>
+    <hr />
+    <div class="project1">
+      <div class="container">
+        <div class="wrapper">
+          <h3>Проект 1. Быки и коровы</h3>
+          <p>
+            Компьютер загадывает число из нескольких различающихся цифр (от 3 до 6). Игроку дается несколько
+            попыток на то, чтобы угадать это число.
+          </p>
+          <input type="text" id="input" />
+          <button type="button" id="answer">Ответить</button>
+          <p>Ответ:</p>
+          <p>совпавших цифр не на своих местах - <span id="matchNoPlace"></span></p>
+          <p>цифры на своих местах - <span id="matchOnPlace"></span></p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="project2">
+      <div class="container">
+        <div class="wrapper">
+          <h3>Проект 2. RPG баттл</h3>
+          <p>Боевой маг Евстафий сражается с лютым монстром.</p>
+          <div class="battle">
+            <div class="player">
+              <h4>Евстафий</h4>
+              <form class="form_player">
+                <div class="select_mag"></div>
+                <button type="submit" id="player_button" class="game_start_btn action_player">Нанести удар</button>
+              </form>
+            </div>
+            <div class="score">
+              <h4>Жизнь:</h4>
+              <p>Евстафий: <span id="health_mag"></span></p>
+              <p>Монстер: <span id="health_monster"></span></p>
+            </div>
+            <div class="monster">
+              <h4>Монстер</h4>
+              <div id="info_monster"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="rpg.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

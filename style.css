@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  border: 1px solid #9e9e9e;
+  box-shadow: -1px 2px 6px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.wrapper {
+  width: 900px;
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  border: 2px solid red;
+  width: 250px;
+  text-align: center;
+  background-color: #eeeeee79;
+  z-index: 100;
+}
+.battle {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #868686;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+  min-height: 200px;
+}
+.game_start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.game_start_text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #db2121;
+}
+.game_start_btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #3b54c4;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #7c7c7c;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.select_lable {
+  cursor: pointer;
+}
+.select_lable input {
+  display: none;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 0 20px;
+}
+
+.form_player {
+  display: flex;
+  flex-direction: column;
+}
+.form_player > button {
+  align-self: center;
+}
+
+.action_player {
+  border: 2px solid #db2121;
+}
+.protect_player {
+  border: 2px solid #306d0d;
+}
+
+.select_mag {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.select_mag input {
+  display: none;
+}
+.select_lable {
+  display: flex;
+  align-items: baseline;
+}
+.radio_button {
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 2px solid #8d8d8d;
+  border-radius: 50%;
+}
+.radio_button::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #306d0d;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+input:checked + .radio_button::before {
+  opacity: 1;
+}
+
+.select_mag label {
+  cursor: pointer;
+}
+.score {
+  white-space: nowrap;
+  width: 160px;
+  padding: 0 20px;
+}
+
+.monster {
+  width: 300px;
+  padding: 0 20px;
+}
