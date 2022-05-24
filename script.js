@@ -56,13 +56,13 @@ function getAnswer() {
 }
 
 function error(message, t = 5) {
-  const wrapper = document.querySelector('.wrapper');
-  const classError = document.querySelector('.error');
-  if (classError) return;
+  const body = document.querySelector('body');
+  const classError = document.querySelector('.error'); 
+  if (classError) return;// если ошибка есть
   const errorMessge = document.createElement('div');
   errorMessge.classList = 'error';
   errorMessge.innerHTML = `<p>${message}</p>`;
-  wrapper.appendChild(errorMessge);
+  body.appendChild(errorMessge);
   setTimeout(() => {
     errorMessge.remove();
   }, t * 1000);
